@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA- CALCULAR LA LA MEDIA DE LAS EDADES DE UNA FAMILIA</h1>
+
+<script>
+
+    function saltarlinea() {
+
+        document.write("<br><br><br>");
+
+
+    };
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarlinea();
+    }
+
+    var numeroMiembros = parseInt(prompt("Ingrese el numero de miembros de su familia"));
+    
+    var count = 1;
+    var totalEdades = 0;
+    while (count <= numeroMiembros) {
+        
+        var edad = parseInt(prompt("Ingrese la edad del miembro " + count + " de su familia"));
+        totalEdades = totalEdades + edad;
+        count++
+    }
+
+    mediaEdades = totalEdades/numeroMiembros;
+
+    imprimir("La media de edad de la familia es " + mediaEdades);
+    imprimir(totalEdades);
+    imprimir("FIN");
+
+
+</script>
